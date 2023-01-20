@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol</title>
+</head>
+
+<body>
+    <h1>Programa para calcular resultados de liga de futbol</h1>
+    <script>
+
+        function saltarlinea() {
+
+            document.write("<br> <br>");
+
+        }
+
+        function imprimir(frase) {
+
+            document.write(frase);
+            saltarlinea();
+        }
+
+        var victorias = parseInt(prompt("Cuantas victorias obtuvo?"));
+        var empates = parseInt(prompt("Cuantos empates obtuvo?"));
+
+        puntosTotales = victorias * 3 + empates;
+        imprimir("El total de puntos que obtuvo su equipo es: " + puntosTotales);
+
+        if (puntosTotales > 28) {
+
+            imprimir("El equipo es mejor respecto al año pasado");
+
+        }
+
+        if (puntosTotales < 28) {
+
+            imprimir("El equipo es peor respecto al año pasado");
+
+        }
+
+        if (puntosTotales == 28) {
+
+            imprimir("El equipo es igual respecto al año pasado");
+
+        }
+
+
+    </script>
+</body>
+
+</html>

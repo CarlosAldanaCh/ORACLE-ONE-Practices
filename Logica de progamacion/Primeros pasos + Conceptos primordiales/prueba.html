@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>serie de figonacci</title>
+</head>
+
+<body>
+    <script>
+
+        function fibonacci(n) {
+            // Inicializamos dos variables, "a" y "b", para almacenar los dos últimos números de la serie
+            let a = 0, b = 1;
+            // Creamos una lista para almacenar los números de la serie
+            let serie = [a, b];
+            // Usamos un ciclo "for" para calcular los números siguientes en la serie
+            for (let i = 2; i < n; i++) {
+                // Calculamos el siguiente número de la serie sumando los dos últimos números
+                let siguiente = a + b;
+                // Agregamos el siguiente número a la lista
+                serie.push(siguiente);
+                // Actualizamos los valores de "a" y "b" para el siguiente ciclo
+                a = b;
+                b = siguiente;
+            }
+            // Devolvemos la lista con los números de la serie
+            return serie;
+        }
+
+        // Llamamos a la función pasándole como argumento el número de números que queremos generar
+        let n = 10;
+        let serie = fibonacci(n);
+
+        // Imprimimos la serie en la consola
+        console.log(serie);
+
+       
+
+    </script>
+</body>
+
+</html>

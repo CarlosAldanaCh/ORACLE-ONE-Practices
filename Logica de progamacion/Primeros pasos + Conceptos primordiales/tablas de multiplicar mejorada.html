@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de multiplicar mejorada</title>
+</head>
+<body>
+    <h1>
+        Tablas de multiplicar mejoradas
+    </h1>
+    <script>
+
+         function saltarlinea() {
+
+            document.write("<br> <br>");
+
+        }
+
+        function imprimir(frase){
+
+            document.write(frase);
+            saltarlinea();
+        }
+        
+        var multiplicador=1;
+        var tablaDeseada=parseInt(prompt("Introduzca la tabla de multiplicar deseada"));
+
+        imprimir("WHILE");
+
+        while(multiplicador<=10){
+            imprimir(tablaDeseada*multiplicador);
+            multiplicador++;
+        }
+        imprimir("FOR");
+        for(var multiplicador=1; multiplicador<=10; multiplicador++){
+            imprimir(tablaDeseada*multiplicador);
+        }
+
+    </script>
+</body>
+</html>

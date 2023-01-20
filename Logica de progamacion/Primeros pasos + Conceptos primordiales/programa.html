@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programa</title>
+</head>
+<body>
+    <h1>HTML</h1>
+    <br>
+    <p>Estoy definiendo la edad de Cristian</p>
+    <br>
+    <h1>JavaScript</h1>
+    <script>
+
+        function saltarParrafo() {
+
+            document.write("<hr>");
+
+        }
+
+        function imprimir(frase){
+
+            document.write(frase);
+        }
+
+        var saltoLinea="<br>";
+
+        document.write("La edad de Cristian es" + saltoLinea);
+        document.write("?..." + saltoLinea);
+        document.write("El año de nacimiento de Carlos es.. "+saltoLinea);
+        document.write("?...");
+        document.write(2022-20);
+        saltarParrafo();
+
+        var promedioJPC = (20+21+18)/3;
+
+        document.write("El promedio de edad de Juan, Pedro y Carlos es...");
+        document.write(saltoLinea);
+        document.write(Math.round(promedioJPC));
+        saltarParrafo();
+
+        document.write("La suma de las edades de los anteriores es.. "+ (20+21+18));
+        saltarParrafo();
+
+        document.write("Juan nacio en el año...");
+        document.write(saltoLinea);
+        document.write(2022-20);
+        document.write(saltoLinea);
+        document.write("Pedro nacio en el año...");
+        document.write(saltoLinea);
+        document.write(2022-21);
+        document.write(saltoLinea);
+        document.write("Carlos nacio en el año...");
+        document.write(saltoLinea);
+        document.write(2022-18);
+        saltarParrafo();
+
+        var anho = 2022;
+
+        document.write("Juan tiene... " + (anho-2002)+ " años");
+        document.write(saltoLinea);
+        document.write(saltoLinea);
+        document.write("Pedro tiene... " + (anho-2001)+ " años");
+        document.write(saltoLinea);
+        document.write(saltoLinea);
+        document.write("Carlos tiene... " + (anho-2004)+ " años");
+        saltarParrafo();
+
+        anho = 2040;
+
+        document.write(saltoLinea);
+        document.write("Carlos tendra... " + (anho-2004)+ " años en el 2040");
+
+        anho = 2022;
+        saltarParrafo();
+        document.write("Jimena tiene... " + (anho-2007)+ " años");
+        document.write(saltoLinea);
+        document.write(saltoLinea);
+
+        document.write("Paola tiene... " + (anho-1999)+ " años");
+        document.write(saltoLinea);
+        document.write(saltoLinea);
+
+        document.write("Laura tiene... " + (anho-1988)+ " años");
+        document.write(saltoLinea);
+        document.write(saltoLinea);
+
+        var edadJimena = 15;
+        var edadPaola = 23;
+        var edadLaura = 34;
+
+        var nombre1 = "Jimena";
+        var nombre2 = "Paola";
+        var nombre3 = "Laura";
+
+        promedio = (edadJimena+edadLaura+edadPaola)/3;
+
+        document.write("El promedio de edad de: " + nombre1 + ", "+ nombre2 + " y " + nombre3 +" es " + promedio);
+        saltarParrafo();
+        imprimir("<h1>El mismo codigo pero usando function para imprimir</h1>")
+        saltarParrafo();
+
+        //El mismo codigo pero usando function para imprimir
+        
+        imprimir("La edad de Cristian es" + saltoLinea);
+        imprimir("?..." + saltoLinea);
+        imprimir("El año de nacimiento de Carlos es.. "+saltoLinea);
+        imprimir("?...");
+        imprimir(2022-20);
+        saltarParrafo();
+
+        var promedioJPC = (20+21+18)/3;
+
+        imprimir("El promedio de edad de Juan, Pedro y Carlos es...");
+        imprimir(saltoLinea);
+        imprimir(Math.round(promedioJPC));
+        saltarParrafo();
+
+        imprimir("La suma de las edades de los anteriores es.. "+ (20+21+18));
+        saltarParrafo();
+
+        imprimir("Juan nacio en el año...");
+        imprimir(saltoLinea);
+        imprimir(2022-20);
+        imprimir(saltoLinea);
+        imprimir("Pedro nacio en el año...");
+        imprimir(saltoLinea);
+        imprimir(2022-21);
+        imprimir(saltoLinea);
+        imprimir("Carlos nacio en el año...");
+        imprimir(saltoLinea);
+        imprimir(2022-18);
+        saltarParrafo();
+
+        var anho = 2022;
+
+        imprimir("Juan tiene... " + (anho-2002)+ " años");
+        imprimir(saltoLinea);
+        imprimir(saltoLinea);
+        imprimir("Pedro tiene... " + (anho-2001)+ " años");
+        imprimir(saltoLinea);
+        imprimir(saltoLinea);
+        imprimir("Carlos tiene... " + (anho-2004)+ " años");
+        saltarParrafo();
+
+        anho = 2040;
+
+        imprimir(saltoLinea);
+        imprimir("Carlos tendra... " + (anho-2004)+ " años en el 2040");
+
+        anho = 2022;
+        saltarParrafo();
+        imprimir("Jimena tiene... " + (anho-2007)+ " años");
+        imprimir(saltoLinea);
+        imprimir(saltoLinea);
+
+        imprimir("Paola tiene... " + (anho-1999)+ " años");
+        imprimir(saltoLinea);
+        imprimir(saltoLinea);
+
+        imprimir("Laura tiene... " + (anho-1988)+ " años");
+        imprimir(saltoLinea);
+        imprimir(saltoLinea);
+
+        var edadJimena = 15;
+        var edadPaola = 23;
+        var edadLaura = 34;
+
+        var nombre1 = "Jimena";
+        var nombre2 = "Paola";
+        var nombre3 = "Laura";
+
+        promedio = (edadJimena+edadLaura+edadPaola)/3;
+
+        imprimir("El promedio de edad de: " + nombre1 + ", "+ nombre2 + " y " + nombre3 +" es " + promedio);
+        saltarParrafo();
+
+
+
+    </script>
+</body>
+</html>

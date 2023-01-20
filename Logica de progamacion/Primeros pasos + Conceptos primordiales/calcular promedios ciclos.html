@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular promedios</title>
+</head>
+
+<body>
+    <h1>
+        Calcular promedios de una familia
+    </h1>
+    <script>
+
+        function saltarlinea() {
+
+            document.write("<br> <br>");
+
+        }
+
+        function imprimir(frase) {
+
+            document.write(frase);
+            saltarlinea();
+        }
+
+        var miembros= parseInt(prompt("Ingrese la cantidad de integrantes en su familia"));
+        var totalEdades=0;
+
+        for (var contador = 1; contador <= miembros; contador++) {
+            edad=parseInt(prompt("Introduzca la edad del integrante No. " + contador))
+            totalEdades=totalEdades+edad;
+
+        }
+        var mediaEdades=totalEdades/miembros;
+        imprimir("El promedio de edades es: " + mediaEdades);
+        imprimir("Fin. Gracias por usar mi programa!")
+
+    </script>
+</body>
+
+</html>
